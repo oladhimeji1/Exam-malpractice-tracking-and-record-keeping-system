@@ -1,0 +1,115 @@
+table{
+    border: 1px solid rgb(0, 179, 255);
+    width: 100rem;
+    position: absolute;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.861);
+    font-size: 12px;
+}
+.tab{
+    margin-left: 5rem;
+    width: 60rem; 
+}
+tr{
+    border-right: 1px solid rgb(0, 179, 255);
+}
+th{
+    background-color: rgb(85, 199, 247);
+    border-right: 1px solid rgb(0, 179, 255);
+    border-bottom: 1px solid rgb(0, 179, 255);
+    padding: 5px;
+}
+td{
+    border-right: 1px solid rgb(0, 179, 255);
+    border-bottom: 1px solid rgb(0, 179, 255);
+    padding: 5px;
+    text-align: center;
+    color: rgb(33, 52, 61);
+}
+.loaderx{
+    margin: auto;
+    color: white;
+    padding: 5px;
+    width: 10rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.866);
+    position: absolute;
+    top: 12rem;
+    left: 22rem;
+}
+.loadery{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.127);
+}
+.loader{
+    margin: 2px auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    animation: rotatex 1s infinite linear;
+}
+@keyframes rotatex {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+h2{
+    color: #ffff;
+    align-items: center;
+    text-align: center;
+}
+.tabx h2{
+    color: #000;
+}
+.search-bar{
+    display: flex;
+    justify-content: space-around;
+    width: 30rem;
+    margin: auto;
+    color: #ffff;
+    position: sticky;
+    left: 20rem;
+}
+.search-bar div input{
+    color: rgb(255, 255, 255);
+    height: 20px;
+    margin-top: 20px;
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0);
+    width: 15rem;
+}
+.details{
+    width: 30rem;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 999999;
+    position: absolute;
+    top: 20px;
+    left: 20rem;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    display: none;
+}
+.details p{
+    margin-left: 40px;
+    margin-bottom: -8px;
+    /* color: rgb(4, 130, 192); */
+}
+.details span{
+    color: rgb(4, 130, 192);
+}
+.item{
+    cursor: pointer;
+
+}
+.item:hover{
+    background-color: rgb(151, 216, 249);
+}

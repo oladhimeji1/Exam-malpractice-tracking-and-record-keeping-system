@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/request.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+    
+    <div class="content">
+        <div class="content">
+            <div class="loadery">
+                <div class="loaderx">
+                    <div class="loader"></div>
+                <p>Loading, pleass wait...</p>
+                </div>
+            </div>
+        
+            <h2>Fill a Malpractice Form</h2>
+            <div class="form-contaner">
+                <div class="partA" id="partA">
+                    <h3>Part A: To be complited by the invigilator</h3>
+                    <div class="partA-inner">
+                        <label for="fullname">1. Name of student:</label>
+                        <input id="fullname" type="text"> <br><br>
+                        <label for="faculty">2. Faculty:</label>
+                        <input id="faculty" type="text"> <br><br>
+                        <label for="">3. Matric no:</label>
+                        <input id="matno" type="text"> <br><br>
+                        <label for="">a. Course code:</label>
+                        <input id="coursecode" type="text"> <br><br>
+                        <label for="">b. Course title:</label>
+                        <input id="coursetitle" type="text"> <br><br>
+                        <label for="">c. Exam hall:</label>
+                        <input id="examhall" type="text"> <br><br>
+                        <label for="">4. Date:</label>
+                        <input id="date" placeholder="eg. 01-01-2023" type="text"> <br><br>
+                        <label for="">5. Invigilator's statement of observed malpractice:</label>
+                        <input id="observed" type="text"> <br><br><label for="">b. Reason for malpractice:</label>
+                        
+                        <select name="reason-for-mal" id="reason-for-mal">
+                            <option value="">--Select--</option>
+                            <option value="Talking">Talking</option>
+                            <option value="Peeping">Peeping</option>
+                            <option value="Exhbit">Exhbit</option>
+                        </select> <br><br>
+                        <label for="">6 a. Any exhibit: if yes, list exhibit(s):</label>
+                        <input id="exhibit" placeholder="comma separated" type="text"> <br><br>
+                        
+                        <label for="">7. Name of invigilator:</label>
+                        <input id="invigilator" type="text"> <br><br>
+                        <label for="">a. Faculty:</label>
+                        <input id="invigilator-fac" type="text"> <br><br>
+                        <label for="">b. Department:</label>
+                        <input id="invigilator-dep" type="text"> <br><br>
+                        <label for="">c. Status:</label>
+                        <input id="invigilator-sta" type="text"> <br><br>
+                        <label for="">d. Date:</label>
+                        <input id="invigilator-dat" placeholder="eg. 01-01-2023" type="text"> <br><br>
+                    </div>
+                    <button class="btn btn-nextA">Next <i class="fa fa-arrow-right"></i></button>
+                </div>
+                <div class="partB" id="partB">
+                    <h3>Part B: To be completed by student</h3>
+                    <div class="partA-inner">
+                        <label for="">Matric no:</label>
+                        <input id="stu-matno" type="text"> <br><br>
+                        <label for="">8. I</label>
+                        <input id="stu-name" type="text"> <label for="">Have read the statement in item 5 above and considered it to be: </label><br> <br>
+                        <label for="">True </label>
+                        <input type="radio" value="True" name="tru" id="truex">
+                        <label for="">False <input type="radio" value="False" name="tru" id="falsex"></label>
+                        <br><br>
+                        <label for="">9. The exhibit(s) listed in 6 above were:</label> <br><br>
+                        <label>a. Removed from me: </label><input id="rmv-me" name="rmv" type="radio">
+                        <label>b. Removed around my siting position: </label><input id="rmv-around" name="rmv" type="radio"> <br><br>
+                        <label for="">10. Students statement on the allegation of Examination Malpractice:</label>
+                        <input id="student-sta" type="text"> <br><br>
+                        <label for="">11. Date:</label>
+                        <input id="student-dat" placeholder="eg. 01-01-2023" type="text"> <br><br>
+                        
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn btn-prevB"> <i class="fa fa-arrow-left"></i> Prev</button>
+                        <button class="btn btn-nextB">Next <i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="partC" id="partC">
+                    <h3>Part C: To be completed by Chief Investigator</h3>
+                    <div class="partC-inner">
+                        <label for="">12. Chief investigator's comments on the alleged mall prectice:</label>
+                        <input id="chief-inv" type="text"> <br><br>
+                        <label for="">13. Name of chief investigator:</label>
+                        <input id="investigator" type="text"> <br><br>
+                        <label for="">a. Faculty:</label>
+                        <input id="investigator-fac" type="text"> <br><br>
+                        <label for="">b. Department:</label>
+                        <input id="investigator-dep" type="text"> <br><br>
+                        <label for="">c. Status:</label>
+                        <input id="investigator-sta" type="text"> <br><br>
+                        <label for="">d. Date:</label>
+                        <input id="investigator-dat" placeholder="eg. 01-01-2023" type="text"> <br><br>
+                        
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn btn-prevC"> <i class="fa fa-arrow-left"></i> Prev</button>
+                        <button class="btn btn-nextC">Next <i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="partD" id="partD">
+                    <h3>Part D:</h3>
+                    <div class="partC-inner">
+                        <li><label for="">Students who are caught with exhibits such as phones, papers are usually expell as this is one of the rules against the examination.</label></li><br><br>
+                        <label for="">14. Sanction:</label>
+                        <select name="sanction" id="sanction">
+                            <option value="">--Select--</option>
+                            <option value="Expell">Expell</option>
+                            <option value="Suspend">Suspend</option>
+                            <option value="Dismiss">Dismiss</option>
+                            <option value="C.O">Carry Over</option>
+                        </select> <br><br>
+                        <label for="">Exhibit(s) must be attached to the completed form.</label><br><br>
+                        <input name="exhibitFile" id="exhibitFile" type="file"> <br><br><p>Faculty examination malpractices commitee shall convene within one week afer the end of the examination</p>
+                        <p>You are to present yourself before the Faculty Examination Malpractices Committee that will investigate the allegation levelled against you. Please be on the look-out for the notice to appear before the Committee and liasing regularly with your department on same</p>
+                        <p><b>IT IS IN YOUR OWN INTEREST TO APPEAR BEFORE THE COMMITTEE AS YOUR ABSENCE WILL BE AN ADMISSION OF GUIT.</b></p>
+                        
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn btn-prevD"> <i class="fa fa-arrow-left"></i> Prev</button>
+                        <button class="btn btn-submit">Submit <i class="fa fa-submit"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="../js/fill.js"></script>
+</body>
+</html>

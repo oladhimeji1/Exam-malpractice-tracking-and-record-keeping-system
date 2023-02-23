@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widp=device-widp, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+    
+    <div class="content">
+        <div class="loadery">
+            <div class="loaderx">
+                <div class="loader"></div>
+            <p>Loading, pleass wait...: <span id=''></span></p>
+            </div>
+        </div>
+        
+        <div class="search-bar tabx" id="search-bar">
+            <h2>Search Result</h2>
+        </div>
+        <table class="tab" id="tab">
+            <tr>
+                <th>Fullname</th>
+                <th>Matric</th>
+                <th>Exhibits</th>
+                <th>Sanction</th>
+                <th>Mal. Reason</th>
+                <th>Invigilator</th>
+            </tr>
+            <tr class='item' title='click here to view record'
+            onclick = "num = '${ol.matno}';
+            readOne()">
+                <td>name</td>
+                <td>Facuty</td>
+                <td>Matric</td>
+                <td>Code</td>
+                <td>Title</td>
+                <td>Hall</td>
+            </tr>
+            <tr  class='item' title='click here to view record'
+            onclick = "num = '${ol.matno}';
+            readOne()">
+                <td>nake</td>
+                <td>Facuty</td>
+                <td>Matric</td>
+                <td>Code</td>
+                <td>Title</td>
+                <td>Hall</td>
+            </tr>
+        </table>
+
+        <div id="detail" class="details"></div>
+    </div>
+
+    
+<script src="../js/search2.js"></script>
+<script src="../js/search.js"></script>
+</body>
+</html>

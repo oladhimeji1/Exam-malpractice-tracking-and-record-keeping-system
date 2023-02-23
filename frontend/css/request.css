@@ -1,0 +1,48 @@
+.form-contaner{
+    background-color: white;
+    width: 50vw;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px 20px;
+}
+input{
+    outline: none;
+    border: none;
+    width: 12rem;
+    border-bottom: 1px dashed #017DBA;
+}
+input[type="radio"]{
+    width: 1rem;
+    border: 1px solid red;
+}
+.partA h3, .partB h3, .partC h3, .partD h3{
+    text-align: center;
+}
+.partB, .partD, .partC{
+    display: none;
+}
+.btn{
+    background-color: #017DBA;
+    border: 2px solid #017DBA;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 9rem;
+}
+.btn:hover{
+    background-color: #015b88;
+    border: 2px solid #015b88;
+}
+.btn:active{
+    background-color: crimson;
+    border: 2px solid crimson;
+}
+.btn-box{
+    display: flex;
+}
+select{
+    width: 10rem;
+    outline: none;
+    border: 1px solid #017DBA;
+}

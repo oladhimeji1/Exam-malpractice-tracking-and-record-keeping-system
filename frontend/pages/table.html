@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widp=device-widp, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+    
+    <div class="content">
+        <div class="loadery">
+            <div class="loaderx">
+                <div class="loader"></div>
+            <p>Loading, pleass wait...: <span id=''></span></p>
+            </div>
+        </div>
+        
+        <div class="search-bar" id="search-bar">
+            <h2>Activity Logs</h2>
+            <div>
+                <i class="fa fa-search"></i>
+                <input placeholder="search by name, matric or sanction" type="text" class="seachbar" id="searchbar">
+            </div>
+        </div>
+        <table id="tab">
+            <tr>
+                <th>Fullname</th>
+                <th>Facuty</th>
+                <th>Matric</th>
+                <th>Code</th>
+                <th>Title</th>
+                <th>Hall</th>
+                <th>Date</th>
+                <th>Exhibits</th>
+                <th>Invigilator</th>
+                <th>Invg-Fac</th>
+                <th>Invg-Dep</th>
+                <th>Invg-Stat</th>
+                <th>Invg-Dat</th>
+                <th>Stu-Affr</th>
+                <th>Exh-Affr</th>
+                <th>Stu-Stmt</th>
+                <th>Stu-Dat</th>
+                <th>Inves-com</th>
+                <th>Inves-Name</th>
+                <th>Inves-Fac</th>
+                <th>Inves-Dep</th>
+                <th>Inves-Stat</th>
+                <th>Inves-Dat</th>
+                <th>Sanction</th>
+            </tr>
+            <tr class='item' title='click here to view record'
+            onclick = "num = '${ol.matno}';
+            readOne()">
+                <td>name</td>
+                <td>Facuty</td>
+                <td>Matric</td>
+                <td>Code</td>
+                <td>Title</td>
+                <td>Hall</td>
+                <td>Date</td>
+                <td>Exhibits</td>
+                <td>Invigilator</td>
+                <td>Invg-Fac</td>
+                <td>Invg-Dep</td>
+                <td>Invg-Stat</td>
+                <td>Invg-Dat</td>
+                <td>Stu-Affr</td>
+                <td>Exh-Affr</td>
+                <td>Stu-Stmt</td>
+                <td>Stu-Dat</td>
+                <td>Inves-com</td>
+                <td>Inves-Name</td>
+                <td>Inves-Fac</td>
+                <td>Inves-Dep</td>
+                <td>Inves-Stat</td>
+                <td>Inves-Dat</td>
+                <td>case</td>
+            </tr>
+            <tr  class='item' title='click here to view record'
+            onclick = "num = '${ol.matno}';
+            readOne()">
+                <td>nake</td>
+                <td>Facuty</td>
+                <td>Matric</td>
+                <td>Code</td>
+                <td>Title</td>
+                <td>Hall</td>
+                <td>Date</td>
+                <td>Exhibits</td>
+                <td>Invigilator</td>
+                <td>Invg-Fac</td>
+                <td>Invg-Dep</td>
+                <td>Invg-Stat</td>
+                <td>Invg-Dat</td>
+                <td>Stu-Affr</td>
+                <td>Exh-Affr</td>
+                <td>Stu-Stmt</td>
+                <td>Stu-Dat</td>
+                <td>Inves-com</td>
+                <td>Inves-Name</td>
+                <td>Inves-Fac</td>
+                <td>Inves-Dep</td>
+                <td>Inves-Stat</td>
+                <td>Inves-Dat</td>
+                <td>Sanction</td>
+            </tr>
+            <tr>
+                <td>hullname</td>
+                <td>Facuty</td>
+                <td>Matric</td>
+                <td>Code</td>
+                <td>Title</td>
+                <td>Hall</td>
+                <td>Date</td>
+
+                <td>Exhibits</td>
+                <td>Invigilator</td>
+                <td>Invg-Fac</td>
+                <td>Invg-Dep</td>
+                <td>Invg-Stat</td>
+                <td>Invg-Dat</td>
+                <td>Stu-Affr</td>
+                <td>Exh-Affr</td>
+                <td>Stu-Stmt</td>
+                <td>Stu-Dat</td>
+                <td>Inves-com</td>
+                <td>Inves-Name</td>
+                <td>Inves-Fac</td>
+                <td>Inves-Dep</td>
+                <td>Inves-Stat</td>
+                <td>Inves-Dat</td>
+                <td>Sanction</td>
+            </tr>
+            <tr>
+                <td>Fullname</td>
+                <td>Facuty</td>
+                <td>Matric</td>
+                <td>Code</td>
+                <td>Title</td>
+                <td>Hall</td>
+                <td>Date</td>
+                <td>Exhibits</td>
+                <td>Invigilator</td>
+                <td>Invg-Fac</td>
+                <td>Invg-Dep</td>
+                <td>Invg-Stat</td>
+                <td>Invg-Dat</td>
+                <td>Stu-Affr</td>
+                <td>Exh-Affr</td>
+                <td>Stu-Stmt</td>
+                <td>Stu-Dat</td>
+                <td>Inves-com</td>
+                <td>Inves-Name</td>
+                <td>Inves-Fac</td>
+                <td>Inves-Dep</td>
+                <td>Inves-Stat</td>
+                <td>Inves-Dat</td>
+                <td>Sanction</td>
+            </tr>
+        </table>
+
+        <div id="detail" class="details"></div>
+    </div>
+
+    
+<script src="../js/table.js"></script>
+</body>
+</html>

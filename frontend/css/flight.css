@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content{
+    width: 70%;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.864);
+    border-radius: 5px;
+    display: block;
+    justify-content: center;
+    padding: 5px 50px;
+}
+.inner-content div{
+    display: block;
+    margin: 5px 20px 10px;
+}
+.inner-content{
+    display: inline-flex
+}
+.user-input{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(0, 179, 255);
+    width: 15rem;
+    position: relative;
+}
+.btn{
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 179, 255);
+    background-color: rgb(0, 179, 255);
+    color: white;
+    margin: 18px auto;
+    width: 9rem;
+    position: relative;
+    cursor: pointer;
+}
+fieldset{
+    border: 2px solid rgb(0, 179, 255);
+}
+.btn:hover{
+    background-color: rgb(3, 77, 108);
+    border: 2px solid rgb(3, 77, 108);
+    color: white;
+}
+.btn:active{
+    background-color: crimson;
+    border: 2px solid crimson;
+    color: white;
+}
+.btn-book{
+    position: relative;
+    left: 20rem;
+}
+.btn-next{
+    position: relative;
+    left: 29rem;
+}
+.content-prev{
+    position: absolute;
+    left: 10rem;
+    top: -15px;
+    background-color: white;
+    height: 90hv;
+    width: 30rem;
+    margin: 10px auto;
+    padding:5px 20px 0 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 99999;
+}
+.personal{
+    display: none;
+}
+.btn-times{
+    position: relative;
+    left: 27rem;
+    top: 20px;
+    font-size: 30rem;
+    color: red;
+    height: 1rem;
+}
+.btn-times:hover{
+    color: rgb(157, 3, 3);
+    cursor: pointer;
+}
+small{
+    color: red;
+    text-align: center;
+    font-size: 12px;
+}
+.loaderx{
+    margin: auto;
+    color: white;
+    padding: 5px;
+    width: 10rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.866);
+    position: absolute;
+    top: 12rem;
+    left: 22rem;
+}
+.loadery{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.127);
+}
+.loader{
+    margin: 2px auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    animation: rotatex 1s infinite linear;
+}
+@keyframes rotatex {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

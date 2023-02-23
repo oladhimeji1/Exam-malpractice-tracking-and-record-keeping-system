@@ -1,0 +1,89 @@
+.item:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+.content-prev{
+    position: absolute;
+    left: 20rem;
+    top: -15px;
+    background-color: white;
+    height: 90hv;
+    width: 20rem;
+    margin: 10px auto;
+    padding:5px 20px 0 20px;
+    border-radius: 5px;
+    /* display: none; */
+    z-index: 99999;
+    font-size: 12px;
+}
+.personal{
+    display: none;
+}
+.btn-times{
+    position: absolute;
+    left: 20rem;
+    top: 20px;
+    font-size: 30px;
+    color: red;
+    height: 1rem;
+}
+.btn-times:hover{
+    color: rgb(157, 3, 3);
+    cursor: pointer;
+}
+small{
+    color: red;
+    text-align: center;
+    font-size: 12px;
+}
+.btn{
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 179, 255);
+    background-color: rgb(0, 179, 255);
+    color: white;
+    margin: 18px auto;
+    width: 9rem;
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(3, 77, 108);
+    border: 2px solid rgb(3, 77, 108);
+    color: white;
+}
+.btn:active{
+    background-color: crimson;
+    border: 2px solid crimson;
+    color: white;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+.pagination-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+}
+.pagination-number,
+.pagination-button{
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    margin: 0.25rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: .2rem;
+}
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover{
+    background: #fff;
+}
+.pagination-number.active{
+    color: #ffff;
+    background: #0085b6;
+}
